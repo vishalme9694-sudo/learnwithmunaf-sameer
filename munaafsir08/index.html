@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TELUGU MUNAAF RAJ</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    color:#e2e8f0;
+    overflow-x:hidden;
+    
+    /* Cyber Deep Sapphire Blue & Premium Emerald Green Gradient */
+    background: radial-gradient(circle at center, #06162e 0%, #020710 100%);
+}
+
+.wrapper{
+    width:100%;
+    max-width:440px;
+    text-align:center;
+}
+
+/* Glassmorphism Card with Neon Cyan/Green Border */
+.card{
+    position:relative;
+    overflow:hidden;
+    padding:35px 25px;
+    border-radius:16px; 
+    background: rgba(10, 25, 47, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 255, 136, 0.25);
+    box-shadow: 0 24px 50px rgba(0,0,0,0.7), 0 0 30px rgba(0, 255, 136, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:#00e5ff;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.1;
+    top:-80px;
+    left:-80px;
+}
+
+.profile{
+    width:110px;
+    height:110px;
+    border-radius:24px;
+    object-fit:cover;
+    border:3px solid #00ff88; /* Bullish Green Border for Profit Vibes */
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    position:relative;
+    z-index:2;
+}
+
+.verify{
+    margin-top:15px;
+    color:#00e5ff; 
+    font-size:13px;
+    font-weight:700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.verify i{
+    color:#00ff88;
+}
+
+h2{
+    margin-top:12px;
+    font-size:24px;
+    color:#ffffff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.stats{
+    margin-top:20px;
+    color:#94a3b8;
+    font-size:13.5px;
+    font-weight:500;
+    background: rgba(0, 255, 136, 0.05);
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 136, 0.15);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: left;
+}
+
+.stats span {
+    color: #00ff88;
+    font-weight: 700;
+}
+
+.text{
+    margin-top:18px;
+    line-height:1.6;
+    font-size:14.5px;
+    color:#cbd5e1;
+}
+
+.benefits{
+    margin-top:20px;
+    background:rgba(255,255,255,0.02);
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:12px;
+    padding:15px;
+    text-align:left;
+}
+
+.benefits div{
+    padding:10px 0;
+    color:#e2e8f0;
+    font-size:14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.benefits div:last-child {
+    border-bottom: none;
+}
+
+/* High CTR Vibrant Green & Cyan Gradient Button */
+.btn{
+    margin-top:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    padding:16px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#020710; /* High Contrast Dark Text */
+    font-size:16px;
+    font-weight:800;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #00ff88, #00e5ff);
+    box-shadow: 0 8px 24px rgba(0, 255, 136, 0.35);
+    transition: all .3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 255, 136, 0.5);
+}
+
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition:.6s;
+}
+
+.btn:hover::before{
+    left:100%;
+}
+
+.disclaimer{
+    margin-top:22px;
+    font-size:11px;
+    line-height:1.7;
+    color:#64748b;
+    padding:0 5px;
+    text-align: justify;
+}
+
+@media(max-width:480px){
+    .card{ padding:30px 18px; }
+    h2{ font-size:21px; }
+    .profile{ width:95px; height:95px; }
+    .btn{ font-size:15px; padding:15px; }
+}
+</style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1587857356023078');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1587857356023078&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="card">
+
+<img src="https://growthsteps.pages.dev/MNFF1.jpg" class="profile" alt="Profile">
+
+<div class="verify">
+<i class="fas fa-check-circle"></i> FREE TRADING LEARNING COMMUNITY
+</div>
+
+<h2>📚 TRADE WITH MUNAAF📚</h2>
+
+<div class="stats">
+<div>⭐ <span>Beginners</span> కోసం చాలా సులభమైన లెర్నింగ్</div>
+<div>🌍 Active తెలుగు Trading Community</div>
+<div>🔥 Daily Educational Market Updates</div>
+</div>
+
+<div class="text">
+📚 Stock Market & Financial Education నేర్చుకోవడానికి బెస్ట్ తెలుగు కమ్యూనిటీ.
+</div>
+
+<a class="btn" id="telegramBtn" href="connecting.html">
+<i class="fas fa-graduation-cap"></i>
+ఉచిత కమ్యూనిటీలో JOIN అవ్వండి
+<i class="fas fa-arrow-right"></i>
+</a>
+
+<div class="benefits">
+<div><i class="fas fa-chart-line" style="color: #00ff88;"></i> Daily Market Updates</div>
+<div><i class="fas fa-book-open" style="color: #00c2ff;"></i> Free Learning Content & Study Materials</div>
+<div><i class="fas fa-bullseye" style="color: #ff4a4a;"></i> Beginners-కు అర్థమయ్యేలా సింపుల్ ఎక్స్‌ప్లనేషన్</div>
+<div><i class="fas fa-users" style="color: #3b82f6;"></i> Full Community Support & Guidance</div>
+<div><i class="fas fa-lightbulb" style="color: #eab308;"></i> Market Awareness & Live Analysis Knowledge</div>
+</div>
+
+</div>
+
+<div class="disclaimer">
+<strong>గమనిక (Disclaimer):</strong> ఈ ప్లాట్‌ఫారమ్ కేవలం విద్యా మరియు సమాచార ప్రయోజనాల (Educational Purposes) కోసం మాత్రమే. మేము ఎటువంటి ఇన్వెస్ట్‌మెంట్, ట్రేడింగ్ లేదా ఫైనాన్షియల్ సలహాలను (Financial Advice) అందించము. మార్కెట్లో ఎలాంటి నిర్ణయం తీసుకునే ముందైనా మీ స్వంత రీసెర్చ్ చేయండి లేదా మీ ఫైనాన్షియల్ అడ్వైజర్‌ను సంప్రదించండి.
+</div>
+
+</div>
+
+<script>
+document.getElementById("telegramBtn").addEventListener("click", function(e){
+    e.preventDefault();
+    const bridgePageLink = this.href;
+
+    // Meta Pixel Event Tracking
+    fbq('track', 'Subscribe', {
+        content_name: 'Telegram Community',
+        button_click: true
+    });
+
+    setTimeout(() => {
+        window.location.href = bridgePageLink;
+    }, 300);
+});
+</script>
+
+</body>
+</html>>>
